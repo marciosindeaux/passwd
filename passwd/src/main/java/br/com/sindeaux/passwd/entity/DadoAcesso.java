@@ -11,6 +11,7 @@ public class DadoAcesso {
     @Column(name = "CO_DADO_ACESSO",nullable = false)
     private Long id;
 
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "CO_SERVICO",nullable = false,insertable = false,updatable = false)
     private Servico servico;
 

@@ -17,6 +17,7 @@ public class Servico {
     @Column(name = "DS_NOME_SERVICO",unique = true,nullable = false)
     private String nome;
 
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "CO_CATEGORIA",nullable = false,insertable = false,updatable = false)
     private Categoria categoria;
 

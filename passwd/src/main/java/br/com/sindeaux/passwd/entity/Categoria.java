@@ -12,6 +12,7 @@ public class Categoria {
     @Column(name = "CO_CATEGORIA")
     private Long id;
 
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "CO_USUARIO", nullable = false, insertable = false, updatable = false)
     private Usuario usuario;
 

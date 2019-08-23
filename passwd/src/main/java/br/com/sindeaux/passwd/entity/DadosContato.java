@@ -7,6 +7,7 @@ import javax.persistence.*;
 public class DadosContato {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "CO_DADO_CONTATO")
     private Long id;
 
     @Column(name = "DS_EMAIL_PRINCIPAL",unique = true,nullable = false)
