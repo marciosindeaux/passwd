@@ -27,9 +27,6 @@ public class DadoPessoal {
     @Column(name = "DS_NOME_COMPLETO",nullable = false)
     private String nomeCompleto;
 
-    @Column(name = "NU_IDADE")
-    private String idade;
-
     public Long getId() {
         return id;
     }
@@ -78,11 +75,4 @@ public class DadoPessoal {
         this.nomeCompleto = nomeCompleto;
     }
 
-    public String getIdade() {
-        return idade;
-    }
-
-    public void setIdade(String idade) {
-        this.idade = idade;
-    }
 }
